@@ -6,7 +6,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title   DecentralizedStableCoin
- * @notice  This contract is meant to be governed by DSCEngine. 
+ * @notice  This contract is meant to be governed by DSCEngine.
  * This contract is just the ERC20 implementation of our stablecoin system
  * Collateral: Exogenous (ETH & BTC)
  * Minting: Algorithmic
@@ -31,7 +31,7 @@ contract DecentralizedStableCoin is ERC20Burnable, Ownable {
     error DecentralizedStableCoin__NotZeroAddress();
 
     constructor() ERC20("DecentralizedStableCoin", "DSC") {}
-    
+
     /*//////////////////////////////////////////////////////////////
                                FUNCTIONS
     //////////////////////////////////////////////////////////////*/
